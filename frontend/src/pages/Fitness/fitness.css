@@ -1,0 +1,241 @@
+.banner{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.banner img{
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+    background-position: center;
+}
+.banner::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    z-index: 1;
+    opacity: .4;
+}
+.fitness-heading{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    width: 100%;
+}
+
+.fitness-heading h2{
+    text-transform: uppercase;
+    font-size: 2.7rem;    
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.fitness-heading p{
+    width: 70%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: var(--exmain-color);
+    display: none;
+    margin-bottom: 0;
+}
+.fitness-heading span{
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    font-weight: 200;
+}
+
+/* fiteness title ssection  */
+.fitness-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 13vw;
+    background-color: rgb(66 25 25);
+    color: white;
+}
+.fit-title-container{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 1.5rem;
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 1px;
+}
+.fit-title-container span{
+    width: 100%;
+    height: 2px;
+    background-color: #a1a1a1;
+    border-radius: 10px;
+}
+.fit-title-container h3{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.fit-title-container h4{
+    font-size: 1.7rem;
+    color: #a1a1a1;
+}
+.fit-title-container>p,.fit-title-container span{
+    font-size: 1.1rem;
+    color: bisque;
+}
+
+/* latest-fit-grid-sec */
+.latest-fit-grid-sec{
+    padding: 3rem 11vw;
+    font-family: "Nunito", sans-serif;
+}
+.latest-fit-grid-sec h3{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.latest-fit-side-left h4{
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-align: center;
+}
+.latest-fit-side-right h4{
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+}
+.latest-fit-side-right img,.latest-fit-side-left img{
+    transition: all ease-in-out .4s;
+}
+
+.latest-fit-side-right img:hover,.latest-fit-side-left img:hover{
+    transform: scale(1.15);
+}
+
+
+
+/* fitness section  */
+
+.fitness-section h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: 2rem;    
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.fitness-section .pline{
+    width: 25rem;
+    margin: auto;
+    height: 2px;
+    border-radius: 10px;
+    background-color: var(--exmain-color);
+    margin-bottom: 0px;
+}
+.fitness-cardSec{
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+}
+
+.exe-card{
+    background-color: rgb(63, 63, 63);
+    border: 0;
+    color: white;
+    box-shadow: 3px 3px 10px rgb(168, 168, 168);
+}
+.exe-card-title{
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.exe-card-subtitle{
+    color: var(--main-color);
+    text-transform: capitalize;
+
+}
+.exe-card-subtitle span{
+    color: white;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding-left: 5px;
+}
+.exe-btn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 50%;
+}
+.exe-loader{
+    height: 100%;
+}
+
+
+/* pagination sec  */
+.pagination-sec .page-link {
+    color: black;
+}
+.pagination-sec .active>.page-link{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+@media (max-width:768px){
+    .fitness-heading h2{
+        font-size: 2.1rem;
+    }
+    .fitness-title{
+        padding: 3rem 6vw;
+    }
+}
+@media (max-width:425px){
+    .banner img{
+        height: 300px;
+        display: none;
+        
+    }
+    .fitness-heading{
+        position: static;
+        display: flex;
+        margin-top: 3rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transform: none;
+    }
+    .fitness-heading h2{
+        margin-top: 3rem;
+        color: black;
+        font-size: 1rem;
+        font-weight: 400;
+
+    }
+    .banner::before{
+        display: none;
+    }
+    .fitness-heading p{
+        display: block;
+    }
+    .fitness-heading span{
+        padding: 10px 30px;
+        font-size: 1rem;
+        color: black;
+        font-weight: 400;
+    }
+    .fitness-section h2,.fitness-section p{
+        display: none;
+    }
+    .latest-fit-side-left h4{
+        font-size: 1.3rem;
+    }
+}

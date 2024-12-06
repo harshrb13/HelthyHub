@@ -1,0 +1,32 @@
+.forgot-section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forgot-form{
+    box-shadow: 5px 5px 15px rgb(208, 208, 208);
+    border-radius: 20px;
+}
+.forgot-form h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+.forgot-form input{
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #c4c4c4;
+}
+.forgot-form button{
+    margin: auto auto;
+}
+.forgot-form button:hover{
+    background-color: white;
+    color: var(--main-color);
+}

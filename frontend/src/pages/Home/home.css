@@ -1,0 +1,142 @@
+/* carousal section  */
+.carousel-section {
+    height: 100vh;
+    /* border-bottom: 2px solid red; */
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-inner::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 1;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .3;
+}
+
+.carousel-item .carousel-caption {
+    color: var(--primary-color);
+    z-index: 20;
+}
+
+.carousel-caption h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-weight: 300;
+    color: var(--primary-color);
+    font-family: "Nunito", sans-serif;
+    z-index: 50;
+    padding-bottom: .5rem;
+}
+
+.carousel-caption h1 span {
+    color: var(--main-color);
+}
+
+.carousel-caption p {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-family: "Nunito", sans-serif;
+    z-index: 50;
+}
+
+.carousel-caption p span {
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.carousel-item img {
+    opacity: .6;
+    min-height: 100vh;
+    max-height: 100vh ;
+    object-fit: cover;
+    background-position: center;
+}
+
+/* services section  */
+.service-sec{
+    height: 100%;
+    padding-top:4rem;
+}
+
+.card-s{
+    width: 18rem;
+} 
+ .row{
+    /* overflow: hidden; */
+    --bs-gutter-x: 0rem;
+}
+
+/* about section  */
+.about-sec{
+    height: 100vh;
+    border-top: 1px solid rgb(229, 229, 229);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-header{
+    background-color:#25ced1 ;
+}
+.container-fluid,.heading{
+      font-family: "Nunito", sans-serif;
+}
+
+#about{
+    overflow: hidden;
+}
+
+
+@media (max-width:992px) {
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+        word-spacing: 2px;
+    }
+}
+
+@media (max-width:768px) {
+    .carousel-caption h1 {
+        font-size: 6vw;
+        word-spacing: 2px;
+    }
+}
+
+@media (max-width:426px) {
+    .carousel-caption{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 80%;
+    }
+    .carousel-caption h1{
+        letter-spacing: 0px;
+        word-spacing: 0px;
+        font-size: 1.7rem;
+    }
+    .carousel-caption p{
+        font-size: 1rem;
+    }
+    .carousel-item img {
+        min-height: 100vh;
+    }
+    .card-s{
+        width: 17rem;
+    }
+}

@@ -1,0 +1,137 @@
+.profile-sec {
+    height: 100%;
+    background-color: #0f191f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-container {
+    height: 100%;
+    border-radius: 15px;
+    margin: 7rem 0rem;
+    /* margin-top: 3rem; */
+}
+
+.profile-img {
+    margin: .8rem 0rem;
+    border-radius: 20px;
+    background-color: rgb(49, 70, 94);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img img {
+    /* margin-top: 2rem; */
+    height: 250px;
+    box-shadow: 0px 0px 10px white;
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.avatar-btn {
+    padding: .7rem;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 8px;
+    margin-top: auto;
+}
+
+.profile-detail {
+    padding: 1rem 0rem 1rem 1rem;
+}
+
+.profile-detail .detail {
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgb(55, 55, 55);
+    padding: 1rem;
+}
+
+.detail h1 {
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: rgb(132, 105, 105);
+}
+
+.detail p {
+    font-weight: bold;
+    font-size: 1.4rem;
+    /* color: white; */
+    margin-top: 1rem;
+}
+
+.detail p span {
+    color: rgb(187, 187, 187);
+    font-weight: 400;
+}
+
+.edit-info-btn {
+    margin-top: 6rem;
+    padding: .7rem;
+    background: transparent;
+    border: 1px solid rgb(142, 97, 97);
+    color: rgb(172, 131, 131);
+    border-radius: 8px;
+}
+.settings{
+    border-radius: 10px;
+    background-color: #7d7777ed;
+    margin-bottom: 1rem;
+}
+.setting-btn{
+    background: transparent;
+    padding: .4rem;
+    border: none;
+    color: rgb(92, 51, 51);
+    text-decoration: none;
+}
+.setting-btn:hover{
+    text-decoration: underline;
+    color: rgb(92, 51, 51);
+
+}
+
+
+@media(max-width:991px){
+    .profile-img img{
+        height: 180px;
+        width: 180px;
+    }
+}
+
+@media(max-width:767.9px){
+    .profile-img img{
+        height: 130px;
+        width: 130px;
+    }
+    .profile-img{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .avatar-btn{
+        margin: 0;
+    }
+    .profile-detail{
+        padding: 0px;
+        padding-bottom: 1rem;
+    }
+    .edit-info-btn{
+        margin-top: 1rem;
+    }
+}
+@media(max-width:425px){
+    .detail h1{
+        font-size: 10vw;
+    }
+    .detail p,.detail p span{
+        font-size: 6vw;
+    }
+    
+}
