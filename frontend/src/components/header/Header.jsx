@@ -98,9 +98,9 @@ function Header({ isAuthenticated, user,loading }) {
                 setProfileToggle(!profileToggle)
               }}>
                 <div className="nav-profile-btn d-lg-flex d-none">
-                  {user ? <img src={user.avatar.url} alt='' /> : <img src={profileImg} alt='loading..' />}
+                  {user ? <img src={user?.avatar?.url} alt='' /> : <img src={profileImg} alt='loading..' />}
 
-                  <p className={profileToggle ? 'text-dark' : ''}>{user.name}</p>
+                  <p className={profileToggle ? 'text-dark' : ''}>{user?.name}</p>
                   <MdArrowDropDown className={`drop-btn ${profileToggle ? 'text-dark' : ''}`} />
                 </div>
                 <div className={`dropdown-section ${profileToggle ? 'd-block' : 'd-lg-none'}`}>
